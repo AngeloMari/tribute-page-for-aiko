@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --main-bg: #f2f2f2;
+  --bg1: #fffefd;
+  --bg2: #fff4c7;
+  --bg3: #f1e09b;
+  --border1: #fce6a9;
+  --border2: #d6d6d6;
+  --bg-img: url("images/background.jpeg");
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  min-width: auto;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 10px;
+  background-color: var(--main-bg);
+  background: var(--bg-img);
+}
+
+/* Tribute title */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--bg3);
+  padding: 15px 0;
+  margin-bottom: 0;
+  border-radius: 15px 15px 0 0;
+  border: 3px dashed var(--bg2);
+  border-bottom: 0;
+}
+
+/* Aiko's photo and caption */
+#img-div {
+  background-color: var(--bg1);
+  padding: 40px;
+  margin: 0;
+  border: 3px dashed var(--border2);
+  border-top: 0;
+  border-bottom: 0;
+}
+#image {
+  display: block;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 500px;
+  aspect-ratio: 3/4;
+  border-radius: 15px;
+  border: 1.5px dotted var(--black);
+}
+#img-caption {
+  margin: auto;
+  padding-top: 10px;
+  width: 90%;
+  max-width: 350px;
+  text-align: justify;
+  font-size: 0.7rem;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/* Aiko's basic info */
+#basic-info {
+  padding: 20px 0;
+  width: 100%;
+  background-color: var(--bg2);
+  border: 3px dashed var(--border1);
+  border-top: 0;
+  border-bottom: 0;
+}
+.info-line {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding-left: 7%;
+  flex-wrap: wrap;
+}
+.info-line .label {
+  font-weight: bolder;
+  white-space: nowrap;
+}
+.info-line .value {
+  flex: 1 1 auto;
+  padding-left: 1%;
+}
+
+/* 10 facts about aiko */
+#facts {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--bg1);
+  padding: 20px 0;
+  border: 3px dashed var(--border2);
+  border-top: 0;
+  border-bottom: 0;
+}
+#facts ol,
+#facts h2 {
+  margin: 0;
+}
+#facts h2 {
+  text-indent: 7%;
+}
+#facts ol {
+  padding-left: 14%;
+}
+
+/* Footer */
+#footer {
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+  text-align: justify;
+  background-color: var(--bg2);
+  font-size: 0.95rem;
+  border-radius: 0 0 15px 15px;
+  margin-top: 0;
+  border: 3px dashed var(--border1);
+  border-top: 0;
+}
+#footer > a {
+  font-weight: normal;
+  color: var(--black);
+}
+#footer > a:hover {
+  font-weight: bolder;
+}
+
+/* Responsiveness */
+@media (min-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+  #img-caption {
+    font-size: 0.8rem;
+  }
+  #title {
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 768px) {
+  * {
+    font-size: 1rem;
+  }
+  #img-caption {
+    font-size: 0.8rem;
+  }
+  #title {
+    font-size: 2.3rem;
+  }
+}
+@media (min-width: 1024px) {
+  * {
+    font-size: 1.1rem;
+  }
+  #img-caption {
+    font-size: 0.9rem;
+  }
+  #title {
+    font-size: 2.5rem;
+  }
+}
